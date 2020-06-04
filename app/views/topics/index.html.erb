@@ -16,7 +16,7 @@
             <%= link_to favorites_path(topic_id: topic.id), method: :delete do %>
             <%= image_tag 'icons/heart-black.png', class: 'topic-index-icon-red' %>
             <% end %>
-            
+            <%= topic.favorite_users.count %>
           <% end %>
           
             <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
